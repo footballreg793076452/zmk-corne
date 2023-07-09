@@ -12,19 +12,19 @@
 // Home row mods macro
 // ----MacOS----
 // CAGS--SGAC
-#define MAC_HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3  &ht LSHFT k4
-#define MAC_HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RALT k3  &ht RCTRL k4
+// #define MAC_HRML(k1,k2,k3,k4) &ht LCTRL k1  &ht LALT k2  &ht LGUI k3  &ht LSHFT k4
+// #define MAC_HRMR(k1,k2,k3,k4) &ht RSHFT k1  &ht RGUI k2  &ht RALT k3  &ht RCTRL k4
 
 // ----Windows----
 // GACS--SCAG
-#define WIN_HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2   &ht LCTRL k3  &ht LSHFT k4
-#define WIN_HRMR(k1,k2,k3,k4) &ht RSHFT k1 &ht RCTRL k2  &ht RALT k3   &ht RGUI k4
+// #define WIN_HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2   &ht LCTRL k3  &ht LSHFT k4
+// #define WIN_HRMR(k1,k2,k3,k4) &ht RSHFT k1 &ht RCTRL k2  &ht RALT k3   &ht RGUI k4
 
-#define MAC 0
-#define WIN 1
-#define RIG 2
-#define LEF 3
-#define TRI 4
+//#define MAC 0
+//#define WIN 1
+//#define RIG 2
+//#define LEF 3
+//#define TRI 4
 
 / {
     behaviors {
@@ -51,7 +51,7 @@
             &kp ESC     &kp Q      &kp W      &kp E     &kp R      &kp T         &kp Y    &kp U      &kp I     &kp O       &kp P    &kp BSP
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │    ;    |   ENT    |
-            &kp LCTRL MAC_HRML(A,    S,         D,        F)      &kp G         &kp H   MAC_HRMR(J,    K,         L,       SEMI)    &kp RET
+            &kp LCTRL    &kpA       &kp S      &kp D     &kp F     &kp G         &kp H     &kp J      &kp K      &kp L    &kp SEMI    &kp RET
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /    |   SHFT   |
             &kp LSHFT   &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
