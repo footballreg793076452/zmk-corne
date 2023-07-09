@@ -27,23 +27,9 @@
 //#define TRI 4
 
 / {
-    behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
-        //layer 0
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬─────────┬─────────┬─────────╮   ╭─────────┬──────────┬──────────┬──────────┬─────────┬──────────╮
@@ -57,7 +43,7 @@
             &kp LSHFT   &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
         //                                 |   GUI   |   LWR   |   SPC   |   |   SPC   |    RSE   |    ALT   |
-                                             &kp LGUI  &mo 2    &kp SPACE     &kp SPACE  &mo 1      &kp RALT
+                                             &kp LGUI   &mo 2    &kp SPACE     &kp SPACE   &mo 1    &kp RALT
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯
             >;
         };
