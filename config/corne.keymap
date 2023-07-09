@@ -22,8 +22,8 @@
 
 #define MAC 0
 #define WIN 1
-#define RIG 2
-#define LEF 3
+#define LEF 2
+#define RIG 3
 #define TRI 4
 
 / {
@@ -90,7 +90,7 @@
         };
 
         //layer 2
-        right_layer {
+        left_layer {
         // -----------------------------------------------------------------------------------------
         // | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
         // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |  :  | ENT |
@@ -105,7 +105,7 @@
         };
 
         //layer 3
-        left_layer {
+        right_layer {
         // -----------------------------------------------------------------------------------------
         // | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
         // | '    |  1  |  2  |  3  |  5  |  4  |   |  -  |  =  |  `  |  [  |  ]  | ENT  |
@@ -128,7 +128,6 @@
         //                    | GUI |     | SPC |   | SPC |     | ALT |
         bindings = <
             &kp TAB   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &out OUT_TOG  &tog WIN &kp LPAR &kp RPAR &kp BSPC
-            //&kp TAB   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
             &kp SQT   &kp N1   &kp N2   &kp N3    &kp N5    &kp N4              &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &trans
             &kp LSHFT &kp N6   &kp N7   &kp N8    &kp N9    &kp N0              &kp MINUS  &kp PLUS  &kp UNDERSCORE  &kp LBRC &kp RBRC &kp PIPE
                                &trans    &trans    &trans              &trans     &trans    &trans 
