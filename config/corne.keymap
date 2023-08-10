@@ -59,7 +59,7 @@
             &kp ESC     &kp Q      &kp W      &kp E     &kp R      &kp T         &kp Y    &kp U      &kp I     &kp O       &kp P    &kp BSPC
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │    ;:   |   ENT    |
-            &kp LCTRL MAC_HRML(A,    S,         D,        F)      &kp G         &kp H   MAC_HRMR(J,    K,         L,       SEMI)    &kp RET
+            &kp LCTRL MAC_HRML(A,    S,         D,        F)    &lt LEF G     &lt RIG H MAC_HRMR(J,    K,         L,       SEMI)    &kp RET
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
             &kp LSHFT   &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
@@ -78,7 +78,7 @@
             &kp ESC     &kp Q      &kp W      &kp E     &kp R      &kp T         &kp Y    &kp U      &kp I     &kp O       &kp P    &kp BSPC
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │    ;:   |   ENT    |
-            &kp LCTRL WIN_HRML(A,    S,         D,        F)      &kp G         &kp H   WIN_HRMR(J,    K,         L,       SEMI)    &kp RET
+            &kp LCTRL WIN_HRML(A,    S,         D,        F)    &lt LEF G     &lt RIG H WIN_HRMR(J,    K,         L,       SEMI)    &kp RET
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
             &kp LSHFT   &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  &kp RSHFT
@@ -113,7 +113,7 @@
         //╭──────────┬──────────┬──────────┬─────────┬─────────┬─────────╮   ╭─────────┬──────────┬──────────┬──────────┬─────────┬──────────╮
         //|   TAB    |    !     |    @     |    #    |    $    |    %    |   |    ^    |    &     |    *     |    (     |    )    |   BKSP   |
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
-        //|    '     |    1     |    2     |    3    |    5    |    4    |   |    -    |    =     |    `     |    [     |    ]    |   ENT    |
+        //|    '     |    1     |    2     |    3    |    4    |    5    |   |    -    |    =     |    `     |    [     |    ]    |   ENT    |
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|    "     |    6     |    7     |    8    |    9    |    0    |   |    -    |    +     |    _     |    {     |    }    |    |     |
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
@@ -121,7 +121,7 @@
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯            
         bindings = <
             &kp TAB   &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-            &kp SQT   &kp N1   &kp N2   &kp N3    &kp N5    &kp N4              &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &trans
+            &kp SQT   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5              &kp MINUS  &kp EQUAL &kp GRAVE       &kp LBKT &kp RBKT &trans
             &kp DQT   &kp N6   &kp N7   &kp N8    &kp N9    &kp N0              &kp MINUS  &kp PLUS  &kp UNDERSCORE  &kp LBRC &kp RBRC &kp PIPE
                                         &trans    &trans    &trans              &trans     &trans    &trans 
             >;
